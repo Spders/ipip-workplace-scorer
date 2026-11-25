@@ -1,0 +1,56 @@
+{
+  "name": "ipip-workplace-scorer",
+  "version": "1.0.0",
+  "description": "Zero-dependency TypeScript/ESM psychometric scoring engine for public-domain IPIP-50 Big Five, 4-Color Workstyle quadrants, dual-concern conflict modes, team roles, and O*NET 31.0 work style alignment.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "personality-test",
+    "big-five",
+    "ipip",
+    "ipip-50",
+    "psychology",
+    "psychometrics",
+    "team-dynamics",
+    "onet",
+    "workplace",
+    "conflict-style",
+    "typescript",
+    "zero-dependencies"
+  ],
+  "homepage": "https://workplacestylequiz.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Spders/ipip-workplace-scorer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Spders/ipip-workplace-scorer/issues"
+  },
+  "scripts": {
+    "test": "node --test test/scorer.test.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
+}
